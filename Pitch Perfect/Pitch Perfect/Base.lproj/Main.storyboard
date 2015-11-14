@@ -17,34 +17,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gd-rs-Xa9">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Osh-RM-ut1">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
-                                <state key="normal" title="Record Button"/>
+                                <state key="normal" image="Microphone"/>
+                                <connections>
+                                    <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4pG-RK-sDJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3gd-rs-Xa9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GaL-4X-aUa"/>
-                            <constraint firstItem="3gd-rs-Xa9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rFN-Cj-hji"/>
+                            <constraint firstItem="Osh-RM-ut1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vaj-jM-64O"/>
+                            <constraint firstItem="Osh-RM-ut1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jlQ-va-LQZ"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="3gd-rs-Xa9"/>
+                                <exclude reference="Osh-RM-ut1"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="GaL-4X-aUa"/>
-                                <exclude reference="rFN-Cj-hji"/>
+                                <exclude reference="Vaj-jM-64O"/>
+                                <exclude reference="jlQ-va-LQZ"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="3gd-rs-Xa9"/>
+                                <include reference="Osh-RM-ut1"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="GaL-4X-aUa"/>
-                                <include reference="rFN-Cj-hji"/>
+                                <include reference="Vaj-jM-64O"/>
+                                <include reference="jlQ-va-LQZ"/>
                             </mask>
                         </variation>
                     </view>
@@ -54,4 +57,7 @@
             <point key="canvasLocation" x="808.5" y="360"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Microphone" width="50" height="50"/>
+    </resources>
 </document>

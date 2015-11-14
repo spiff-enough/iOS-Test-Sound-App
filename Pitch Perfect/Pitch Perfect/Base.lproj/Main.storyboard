@@ -28,16 +28,30 @@
                                             <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4pG-RK-sDJ"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recording in Process" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0pD-aZ-Ups">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recording in Process" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0pD-aZ-Ups">
                                         <rect key="frame" x="20" y="85" width="162" height="21"/>
                                         <animations/>
+                                        <accessibility key="accessibilityConfiguration" label="label1"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <animations/>
-                                <variation key="widthClass=compact" alignment="center" axis="vertical"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="UVA-3r-RJ9"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="UVA-3r-RJ9"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" alignment="center" axis="vertical" misplaced="YES">
+                                    <rect key="frame" x="119" y="264" width="162" height="100"/>
+                                    <mask key="constraints">
+                                        <include reference="UVA-3r-RJ9"/>
+                                    </mask>
+                                </variation>
                             </stackView>
                         </subviews>
                         <animations/>
@@ -59,6 +73,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="label1" destination="0pD-aZ-Ups" id="lqB-Hf-e3z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

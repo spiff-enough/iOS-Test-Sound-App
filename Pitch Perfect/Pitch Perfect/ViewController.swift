@@ -12,10 +12,13 @@ class ViewController: UIViewController {
 
     // "Recording in Process" label defined
     @IBOutlet weak var label1: UILabel!
+    @IBOutlet var stopButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        label1.hidden = true
+        label1.hidden = true;
+        stopButton.hidden = false;
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -30,6 +33,10 @@ class ViewController: UIViewController {
         label1.hidden = false
         
         print("In recordAudio")
+    }
+    
+    @IBAction func stopRecording(sender: UIButton) {
+        print("Presed stop")
     }
 
 }

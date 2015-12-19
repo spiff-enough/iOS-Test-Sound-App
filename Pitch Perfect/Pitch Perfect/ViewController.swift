@@ -12,14 +12,19 @@ class ViewController: UIViewController {
 
     // "Recording in Process" label defined
     @IBOutlet weak var label1: UILabel!
-    @IBOutlet var stopButton: UIButton!
+    @IBOutlet weak var stopButton: UIButton!
+    @IBOutlet weak var recordButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        label1.hidden = true;
-        stopButton.hidden = false;
-        
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        // Makes changes inside the view right before the view loads on the user's device
+        label1.hidden = true
+        stopButton.hidden = true
+        recordButton.enabled = true;
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,12 +36,15 @@ class ViewController: UIViewController {
         //TODO: Show text "recording in progress"
         //TODO: Record the user's voice
         label1.hidden = false
-        
-        print("In recordAudio")
+        stopButton.hidden = false
+        recordButton.enabled = false
+        print("Recording audio")
     }
     
     @IBAction func stopRecording(sender: UIButton) {
-        print("Presed stop")
+        label1.hidden = true
+        stopButton.hidden = true
+        print("Pressed stop")
     }
 
 }

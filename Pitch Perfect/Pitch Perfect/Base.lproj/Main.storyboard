@@ -11,7 +11,7 @@
         <!--Record-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RecordSoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -20,10 +20,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="du1-UA-6eo">
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="du1-UA-6eo">
                                 <rect key="frame" x="99" y="230" width="212" height="50"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0dd-FV-Iuf">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0dd-FV-Iuf">
                                         <rect key="frame" x="0.0" y="0.0" width="212" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Osh-RM-ut1" userLabel="record_button">
@@ -83,11 +83,11 @@
                                 <exclude reference="KYZ-Qj-iNM"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Hhg-mF-LvD"/>
-                                <exclude reference="sqn-bw-2fR"/>
                                 <exclude reference="G6K-Yl-sb8"/>
                                 <exclude reference="d0N-Em-o9U"/>
                                 <exclude reference="2Nm-Fo-tgF"/>
+                                <exclude reference="Hhg-mF-LvD"/>
+                                <exclude reference="sqn-bw-2fR"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -95,11 +95,11 @@
                                 <include reference="KYZ-Qj-iNM"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Hhg-mF-LvD"/>
-                                <include reference="sqn-bw-2fR"/>
                                 <include reference="G6K-Yl-sb8"/>
                                 <include reference="d0N-Em-o9U"/>
                                 <include reference="2Nm-Fo-tgF"/>
+                                <include reference="Hhg-mF-LvD"/>
+                                <include reference="sqn-bw-2fR"/>
                             </mask>
                         </variation>
                     </view>

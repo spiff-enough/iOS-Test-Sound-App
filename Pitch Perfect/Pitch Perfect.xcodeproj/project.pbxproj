@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D04551711C25FE5400E96C12 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04551701C25FE5400E96C12 /* PlaySoundsViewController.swift */; };
+		D04551731C2605C200E96C12 /* movie_quote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D04551721C2605C200E96C12 /* movie_quote.mp3 */; };
 		D0F220361BF67F9C00013E8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F220351BF67F9C00013E8E /* AppDelegate.swift */; };
 		D0F220381BF67F9C00013E8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F220371BF67F9C00013E8E /* ViewController.swift */; };
 		D0F2203B1BF67F9C00013E8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F220391BF67F9C00013E8E /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		D04551701C25FE5400E96C12 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
+		D04551721C2605C200E96C12 /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = movie_quote.mp3; sourceTree = "<group>"; };
 		D0F220321BF67F9C00013E8E /* Pitch Perfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pitch Perfect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F220351BF67F9C00013E8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0F220371BF67F9C00013E8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				D0F220391BF67F9C00013E8E /* Main.storyboard */,
 				D04551701C25FE5400E96C12 /* PlaySoundsViewController.swift */,
 				D0F2203C1BF67F9C00013E8E /* Assets.xcassets */,
+				D04551721C2605C200E96C12 /* movie_quote.mp3 */,
 				D0F2203E1BF67F9C00013E8E /* LaunchScreen.storyboard */,
 				D0F220411BF67F9C00013E8E /* Info.plist */,
 			);
@@ -234,6 +237,7 @@
 			files = (
 				D0F220401BF67F9C00013E8E /* LaunchScreen.storyboard in Resources */,
 				D0F2203D1BF67F9C00013E8E /* Assets.xcassets in Resources */,
+				D04551731C2605C200E96C12 /* movie_quote.mp3 in Resources */,
 				D0F2203B1BF67F9C00013E8E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
